@@ -1,0 +1,1 @@
+A la hora de programar es importante que nuestros diseños sean accesibles para todas las personas. Por eso a lo largo de esta lección crearemos diseños que se ajusten de la mejor manera con los lectores de pantalla. :raised_hands:

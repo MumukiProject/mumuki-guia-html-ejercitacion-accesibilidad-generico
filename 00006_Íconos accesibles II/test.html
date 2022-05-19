@@ -1,0 +1,30 @@
+/*<output#*//*#output>*/
+/*<tests#*/it("Se introdujeron tres íconos", () => {
+  document.getElementsByTagName("i").length.should.eql(3);
+})
+
+it("Se introdujo el ícono de cortar dentro de un botón", () => {
+  document.querySelector("button i[class='fas fa-cut']").should.exist;
+});
+
+it("Se introdujo el ícono de copiar dentro de un botón", () => {
+  document.querySelector("button i[class='fas fa-copy']").should.exist;
+});
+
+it("Se introdujo el ícono de pegar dentro de un botón", () => {
+  document.querySelector("button i[class='fas fa-paste']").should.exist;
+});
+
+it("Los íconos tienen un atributo 'aria-hidden'", () => {
+  document.getElementsByTagName("i")[0].should.have.attr('aria-hidden', 'true');
+  document.getElementsByTagName("i")[1].should.have.attr('aria-hidden', 'true');
+  document.getElementsByTagName("i")[2].should.have.attr('aria-hidden', 'true');
+})
+
+it("Los botones tienen un atributo 'aria-label'", () => {
+  document.getElementsByTagName("button")[0].should.have.attr('aria-label');
+  document.getElementsByTagName("button")[1].should.have.attr('aria-label');
+  document.getElementsByTagName("button")[2].should.have.attr('aria-label');
+})/*#tests>*/
+/*<options#*/output_ignore_scripts: true
+output_ignore_styles: true/*#options>*/
